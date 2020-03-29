@@ -1,0 +1,23 @@
+03:13:52.332 [restartedMain] [INFO ] com.df.tbakendcontroller.TBakendControllerApplication -> Starting TBakendControllerApplication on DESKTOP-7RFT0T8 with PID 10080 (D:\Project\JavaProject\taotao\t-parent\t-bakend\t-bakend-controller\target\classes started by dengfan in D:\Project\JavaProject\taotao\t-parent)
+03:13:52.342 [restartedMain] [INFO ] com.df.tbakendcontroller.TBakendControllerApplication -> No active profile set, falling back to default profiles: default
+03:13:52.393 [restartedMain] [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:13:52.394 [restartedMain] [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:13:53.219 [restartedMain] [WARN ] org.mybatis.spring.mapper.ClassPathMapperScanner -> No MyBatis mapper was found in '[com.df.tbakendcontroller]' package. Please check your configuration.
+03:13:53.749 [restartedMain] [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer -> Tomcat initialized with port(s): 8080 (http)
+03:13:53.760 [restartedMain] [INFO ] org.apache.coyote.http11.Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-8080"]
+03:13:53.762 [restartedMain] [INFO ] org.apache.catalina.core.StandardService -> Starting service [Tomcat]
+03:13:53.763 [restartedMain] [INFO ] org.apache.catalina.core.StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.31]
+03:13:53.766 [restartedMain] [INFO ] org.apache.catalina.core.AprLifecycleListener -> An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+03:13:53.767 [restartedMain] [INFO ] org.apache.catalina.core.AprLifecycleListener -> Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+03:13:53.767 [restartedMain] [INFO ] org.apache.catalina.core.AprLifecycleListener -> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03:13:53.767 [restartedMain] [INFO ] org.apache.catalina.core.AprLifecycleListener -> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+03:13:54.819 [restartedMain] [INFO ] org.apache.catalina.core.AprLifecycleListener -> OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+03:13:54.917 [restartedMain] [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -> Initializing Spring embedded WebApplicationContext
+03:13:54.917 [restartedMain] [INFO ] org.springframework.web.context.ContextLoader -> Root WebApplicationContext: initialization completed in 2503 ms
+03:13:55.268 [restartedMain] [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+03:13:55.457 [restartedMain] [INFO ] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure -> Init DruidDataSource
+03:13:56.967 [restartedMain] [INFO ] com.alibaba.druid.pool.DruidDataSource -> {dataSource-1} inited
+03:13:57.455 [restartedMain] [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer -> LiveReload server is running on port 35729
+03:13:57.526 [restartedMain] [INFO ] org.apache.coyote.http11.Http11NioProtocol -> Starting ProtocolHandler ["http-nio-8080"]
+03:13:57.575 [restartedMain] [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer -> Tomcat started on port(s): 8080 (http) with context path ''
+03:13:57.580 [restartedMain] [INFO ] com.df.tbakendcontroller.TBakendControllerApplication -> Started TBakendControllerApplication in 5.695 seconds (JVM running for 7.478)

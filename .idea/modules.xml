@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mybatisgenerator/mybatisgenerator.iml" filepath="$PROJECT_DIR$/mybatisgenerator/mybatisgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-bakend/t-bakend.iml" filepath="$PROJECT_DIR$/t-bakend/t-bakend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-bakend/t-bakend-controller/t-bakend-controller.iml" filepath="$PROJECT_DIR$/t-bakend/t-bakend-controller/t-bakend-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-bakend/t-bakend-domain/t-bakend-domain.iml" filepath="$PROJECT_DIR$/t-bakend/t-bakend-domain/t-bakend-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-bakend/t-bakend-mapper/t-bakend-mapper.iml" filepath="$PROJECT_DIR$/t-bakend/t-bakend-mapper/t-bakend-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-bakend/t-bakend-service/t-bakend-service.iml" filepath="$PROJECT_DIR$/t-bakend/t-bakend-service/t-bakend-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-common/t-common.iml" filepath="$PROJECT_DIR$/t-common/t-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t-parent.iml" filepath="$PROJECT_DIR$/t-parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>pom</packaging>
+	<modules>
+		<module>mybatisgenerator</module>
+	</modules>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.df</groupId>
+	<artifactId>t-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>t-parent</name>
+	<description>Demo project for Spring Boot</description>
+
+
+
+	<properties>
+		<java.version>1.8</java.version>
+		<springboot-version>2.2.5.RELEASE</springboot-version>
+		<mybatis-plus.version>3.2.0</mybatis-plus.version>
+		<shiro.version>1.4.2</shiro.version>
+		<druid.version>1.1.21</druid.version>
+		<log4j.version>1.2.17</log4j.version>
+		<hutool.version>5.1.5</hutool.version>
+		<mysql-connector.version>8.0.19</mysql-connector.version>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<!--lombok依赖-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${springboot-version}</version>
+				<!--springboot2只支持log4j2的配置，不支持log4j的配置，需要把默认的logback去掉-->
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+
+
+			<!--定时任务调度器starter-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-quartz</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+			</dependency>
+
+
+
+			<!-- mybatis-plus 依赖 -->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-boot-starter</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connector.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+
+
+			<!-- shiro 依赖 -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-all</artifactId>
+				<version>${shiro.version}</version>
+				<type>pom</type>
+			</dependency>
+
+			<!-- shiro和thymeleaf集成的扩展依赖，为了能再页面上使用xmlsn:shiro的标签-->
+			<dependency>
+				<groupId>com.github.theborakompanioni</groupId>
+				<artifactId>thymeleaf-extras-shiro</artifactId>
+				<version>2.0.0</version>
+			</dependency>
+
+
+			<!-- druid 依赖 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid-spring-boot-starter</artifactId>
+				<version>${druid.version}</version>
+			</dependency>
+
+
+
+			<!-- hutool 依赖 -->
+			<dependency>
+				<groupId>cn.hutool</groupId>
+				<artifactId>hutool-all</artifactId>
+				<version>${hutool.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

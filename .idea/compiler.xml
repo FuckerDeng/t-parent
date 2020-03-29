@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatisgenerator" />
+        <module name="t-bakend-controller" />
+        <module name="t-bakend-domain" />
+        <module name="t-bakend-mapper" />
+        <module name="t-bakend-service" />
+        <module name="t-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="mybatisgenerator" target="1.8" />
+      <module name="t-bakend" target="1.8" />
+      <module name="t-bakend-controller" target="1.8" />
+      <module name="t-bakend-domain" target="1.8" />
+      <module name="t-bakend-mapper" target="1.8" />
+      <module name="t-bakend-service" target="1.8" />
+      <module name="t-common" target="1.8" />
+      <module name="t-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
